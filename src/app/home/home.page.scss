@@ -1,0 +1,83 @@
+ion-toolbar{
+    background-color: rgb(234,225,218);
+}
+
+ion-content{
+    --ion-background-color: var(--ion-color-verde);
+}
+
+ion-content ion-img{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 25%;
+    width: 100%;
+}
+
+.ContainerLogo {
+    /* Ajusta la altura máxima de la imagen para evitar desbordamientos */
+    max-height: 80vh; /* Puedes ajustar este valor según tus necesidades */
+  }
+  
+.centered-image {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100%; /* Ajusta la altura del contenedor para que funcione en dispositivos de diferentes tamaños */
+  }
+
+.Logo{
+    height: 150px; 
+    width: 150px;
+}
+
+.btnLogin{
+    text-align: left;
+    width: 100%;
+    background-color: var(--ion-color-verde);
+    color: white;
+    border-radius: 60px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.botonLog{
+    position: relative;
+}
+
+.botonLog ion-item{
+    --ion-background-color: white;
+    height: 50px;
+}
+
+.iconLog{
+    position: relative;
+    left: 20%;
+}
+
+.container{
+    position: absolute;
+    height: 65.4%;
+    width: 100%;
+    top: 60%;
+    transform: translateY(-39%);
+    background-color: white;
+    border-radius: 10% 10% 0% 0%;
+    padding: 10%;
+}
+
+
+.container ion-label{
+    text-align: left;
+    font-weight: bold;
+}
+
+.inputs{
+    --ion-background-color: white;
+    border-radius: 10px;
+    border: solid 1px rgb(122,163,181);
+}
+

@@ -1,0 +1,40 @@
+<!--<ion-header [translucent]="true">
+  <ion-toolbar color="verde">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+-->
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div class="ContainerLogo">
+    <ion-img class="Logo centered-image" src="assets/img/utpp.png"></ion-img>
+  </div>
+    <div class="container">
+      
+      <div clas="inputsPos">
+        <ion-label>Usuario:</ion-label>
+        <ion-item class="inputs">
+          <ion-icon name="person-circle-outline"></ion-icon>
+          <ion-input></ion-input>
+        </ion-item><br>
+        <ion-label>Contraseña:</ion-label>
+        <ion-item class="inputs">
+          <ion-icon [name]="showPassword ? 'eye-outline' : 'eye-off-outline'" (click)="togglePasswordVisibility()"></ion-icon>
+          <ion-input [type]="showPassword ? 'text' : 'password'"></ion-input>
+        </ion-item>
+      </div>
+      
+      <br>
+      <div class="botonLog">
+        <ion-item>
+          <button [routerLink]="['/type']" class="btnLogin">Iniciar Sesión <ion-icon class="iconLog" name="arrow-forward-outline"></ion-icon></button>
+          
+        </ion-item>
+      </div>
+    </div>
+</ion-content>
